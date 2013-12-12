@@ -6,7 +6,7 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/26 13:57:37 by bgauci            #+#    #+#             */
-/*   Updated: 2013/11/26 16:32:46 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/12 16:09:55 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 void	ft_lstaddend (t_list **alst, t_list *new)
 {
 	if (alst == NULL)
+		return ;
+	if (*alst == NULL)
 	{
 		*alst = new;
 		return ;
