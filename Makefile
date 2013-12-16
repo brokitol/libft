@@ -6,7 +6,7 @@
 #    By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/11/20 11:59:50 by bgauci            #+#    #+#              #
-#    Updated: 2013/12/16 18:03:18 by bgauci           ###   ########.fr        #
+#    Updated: 2013/12/16 18:51:29 by bgauci           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,8 @@ OBJ =	ft_atoi.o		ft_isalpha.o	ft_isprint.o		ft_memccpy.o	\
 		ft_lstaddend.o	ft_lstiter.o	ft_lstmap.o			ft_strreverse.o \
 		ft_strlstnew.o	ft_strlstadd.o	ft_strlstaddend.o	ft_strlstdel.o	\
 		ft_strlstiter.o	ft_strlstmap.o	ft_strlstdelone.o	ft_pgcd.o		\
-		ft_strjcat.o	ft_lstswap.o	ft_strfastsub.o		ft_strhach.o
+		ft_strjcat.o	ft_lstswap.o	ft_strfastsub.o		ft_strhach.o	\
+		tree_AVL.o
 FLAGS = -Wall -Werror -Wextra
 CC = /usr/bin/gcc
 RMF = rm -f
