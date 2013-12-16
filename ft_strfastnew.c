@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strfastnew.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2013/11/19 18:24:30 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/15 17:48:07 by bgauci           ###   ########.fr       */
+/*   Created: 2013/12/16 17:46:04 by bgauci            #+#    #+#             */
+/*   Updated: 2013/12/16 17:55:14 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-inline int	ft_strcmp (const char *s1, const char *s2)
+inline char	*ft_strfastnew(const size_t size)
 {
-	unsigned int	i;
+	char	*res;
 
-	if (!s1 || !s2)
-		return (0);
-	i = 0;
-	while (s1[i] == s2[i] && s1[i] != '\0')
-		i++;
-	return (s1[i] - s2[i]);
+	res = (char *)malloc(sizeof(char) * size + 1);
+	if (res == NULL)
+		return (NULL);
+	res[0] = '\0';
+	res[size] = '\0';
+	return (res);
 }

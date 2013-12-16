@@ -6,7 +6,7 @@
 #    By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/11/20 11:59:50 by bgauci            #+#    #+#              #
-#    Updated: 2013/12/11 18:05:17 by bgauci           ###   ########.fr        #
+#    Updated: 2013/12/16 18:03:18 by bgauci           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,11 +24,12 @@ OBJ =	ft_atoi.o		ft_isalpha.o	ft_isprint.o		ft_memccpy.o	\
 		ft_putchar_fd.o	ft_putnbr.o		ft_putstr_fd.o		ft_strclr.o		\
 		ft_strdel.o		ft_striter.o	ft_strlcat.o		ft_strmapi.o	\
 		ft_strncpy.o	ft_strnstr.o	ft_strstr.o			ft_tolower.o	\
+		ft_strfastcat.o	ft_strfastdup.o	ft_strfastjoin.o	ft_strfastnew.o	\
 		ft_lstnew.o		ft_lstdelone.o	ft_lstdel.o			ft_lstadd.o		\
 		ft_lstaddend.o	ft_lstiter.o	ft_lstmap.o			ft_strreverse.o \
 		ft_strlstnew.o	ft_strlstadd.o	ft_strlstaddend.o	ft_strlstdel.o	\
 		ft_strlstiter.o	ft_strlstmap.o	ft_strlstdelone.o	ft_pgcd.o		\
-		ft_strjcat.o	ft_lstswap.o
+		ft_strjcat.o	ft_lstswap.o	ft_strfastsub.o		ft_strhach.o
 FLAGS = -Wall -Werror -Wextra
 CC = /usr/bin/gcc
 RMF = rm -f

@@ -1,25 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strfastdup.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2013/11/19 18:24:30 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/15 17:48:07 by bgauci           ###   ########.fr       */
+/*   Created: 2013/12/16 17:24:17 by bgauci            #+#    #+#             */
+/*   Updated: 2013/12/16 17:53:58 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-inline int	ft_strcmp (const char *s1, const char *s2)
+inline char	*ft_strfastdup(const char *s1, const int s1_len)
 {
-	unsigned int	i;
+	char *res;
 
-	if (!s1 || !s2)
-		return (0);
-	i = 0;
-	while (s1[i] == s2[i] && s1[i] != '\0')
-		i++;
-	return (s1[i] - s2[i]);
+	if (!s1)
+		return (NULL);
+	res = ft_strfastnew(s1_len);
+	if (res == 0)
+		return (NULL);
+	ft_strcpy(res, s1);
+	return (res);
 }

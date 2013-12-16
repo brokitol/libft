@@ -1,25 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strfastsub.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2013/11/19 18:24:30 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/15 17:48:07 by bgauci           ###   ########.fr       */
+/*   Created: 2013/12/16 17:24:28 by bgauci            #+#    #+#             */
+/*   Updated: 2013/12/16 17:56:40 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-inline int	ft_strcmp (const char *s1, const char *s2)
+inline char	*ft_strfastsub	(char *s, size_t start, size_t len, size_t s_len)
 {
 	unsigned int	i;
+	char			*res;
 
-	if (!s1 || !s2)
-		return (0);
+	if (!s)
+		return (NULL);
+	if (s_len < start + len)
+	{
+		res = ft_strnew(0);
+		return (res);
+	}
+	res = ft_strnew(len + 1);
 	i = 0;
-	while (s1[i] == s2[i] && s1[i] != '\0')
+	while (i < len)
+	{
+		res[i] = s[start + i];
 		i++;
-	return (s1[i] - s2[i]);
+	}
+	return (res);
 }

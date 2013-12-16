@@ -1,25 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strfastcat.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2013/11/19 18:24:30 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/15 17:48:07 by bgauci           ###   ########.fr       */
+/*   Created: 2013/12/16 18:00:16 by bgauci            #+#    #+#             */
+/*   Updated: 2013/12/16 18:01:18 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-inline int	ft_strcmp (const char *s1, const char *s2)
+char	*ft_strfastcat(char *s1, const int s1_len, const char *s2)
 {
 	unsigned int	i;
 
-	if (!s1 || !s2)
-		return (0);
 	i = 0;
-	while (s1[i] == s2[i] && s1[i] != '\0')
+	while (s2[i] != '\0')
+	{
+		s1[i + s1_len] = s2[i];
 		i++;
-	return (s1[i] - s2[i]);
+	}
+	s1[i + s1_len] = '\0';
+	return (s1);
 }

@@ -1,25 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strfastjoin.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2013/11/19 18:24:30 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/15 17:48:07 by bgauci           ###   ########.fr       */
+/*   Created: 2013/12/16 17:24:23 by bgauci            #+#    #+#             */
+/*   Updated: 2013/12/16 17:58:37 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-inline int	ft_strcmp (const char *s1, const char *s2)
+inline void	ft_strfastjoin (char **s1, char const *s2, int s1_len, int s2_len)
 {
-	unsigned int	i;
+	char	*res;
 
-	if (!s1 || !s2)
-		return (0);
-	i = 0;
-	while (s1[i] == s2[i] && s1[i] != '\0')
-		i++;
-	return (s1[i] - s2[i]);
+	if (!s1 || !(*s1) || !s2)
+		return ;
+	res = ft_strfastnew(s1_len + s2_len);
+	if (res != NULL)
+	{
+		ft_strfastcat(res, 0, *s1);
+		ft_strfastcat(res, s1_len, s2);
+	}
+	*s1 = res;
 }

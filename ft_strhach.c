@@ -1,25 +1,54 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strhach.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2013/11/19 18:24:30 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/15 17:48:07 by bgauci           ###   ########.fr       */
+/*   Created: 2013/12/14 20:00:49 by bgauci            #+#    #+#             */
+/*   Updated: 2013/12/16 18:05:30 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include "ft_strhach.h"
 
-inline int	ft_strcmp (const char *s1, const char *s2)
+int	ft_strhach(char *str)
 {
-	unsigned int	i;
+	int		i;
+	int		j;
 
-	if (!s1 || !s2)
+	if (!str)
 		return (0);
 	i = 0;
-	while (s1[i] == s2[i] && s1[i] != '\0')
-		i++;
-	return (s1[i] - s2[i]);
+	j = 0;
+	while (*str != 0)
+	{
+		j = j * 3 + *str;
+		if (j >= MAX_INT)
+			j = j % (FACTOR);
+		str++;
+	}
+	i = j % TAB_LEN;
+	return (i);
+}
+
+int	ft_strhach_bis(char *str)
+{
+	int		i;
+	int		j;
+
+	if (!str)
+		return (0);
+	i = 0;
+	j = 0;
+	while (*str != 0)
+	{
+		j = j * 5 + *str;
+		if (j >= MAX_INT)
+			j = j % (FACTOR);
+		str++;
+	}
+	i = j % TAB_LEN;
+	return (i);
 }
