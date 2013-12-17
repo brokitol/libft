@@ -6,7 +6,7 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 16:40:39 by bgauci            #+#    #+#             */
-/*   Updated: 2013/11/26 11:18:44 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/17 14:47:58 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strstr	(const char *s1, const char *s2)
 	i = 0;
 	if (s2[0] == '\0')
 		return ((char *)s1);
-	while (s1[i] != '\0')// si s1 == "" erreur
+	while (s1[i] != '\0')
 	{
 		j = 0;
 		bol = 0;

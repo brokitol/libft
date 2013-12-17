@@ -6,7 +6,7 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/13 23:27:05 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/16 18:54:49 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/17 14:46:13 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,7 @@ t_tree_AVL	*ft_tree_balance(t_tree_AVL *root)
 		return (ft_tree_left_rotation(root));
 	else if (i > 1)
 		return (ft_tree_right_rotation(root));
-	return root;
+	return (root);
 }
 
 t_tree_AVL	*ft_tree_left_rotation(t_tree_AVL *root)
@@ -208,7 +208,7 @@ int			ft_tree_cmp(t_tree_AVL *root, t_tree_AVL *sheet)
 	i = root->hach - sheet->hach;
 	if (i != 0)
 		return (i);
-	return ft_strcmp(root->index, sheet->index);
+	return (ft_strcmp(root->index, sheet->index));
 }
 int			ft_tree_strcmp(t_tree_AVL *root, char *str)
 {
@@ -219,5 +219,5 @@ int			ft_tree_strcmp(t_tree_AVL *root, char *str)
 	i = root->hach - ft_strhach_bis(str);
 	if (i != 0)
 		return (i);
-	return ft_strcmp(root->index, str);
+	return (ft_strcmp(root->index, str));
 }

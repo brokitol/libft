@@ -6,7 +6,7 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/17 13:38:16 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/17 13:38:33 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/17 14:44:05 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ char	*ft_truncate(char **s, int s_len, char *tmp)
 		return (NULL);
 	if (tmp == NULL)
 		return (NULL);
-	end = ft_strdup(tmp + 1, (*s + s_len - tmp));
-	begin = ft_strsub(*s, 0, s_len - (*s + s_len - tmp), s_len);
+	end = ft_strfastdup(tmp + 1, (*s + s_len - tmp));
+	begin = ft_strfastsub(*s, 0, s_len - (*s + s_len - tmp), s_len);
 	free(*s);
 	*s = begin;
 	return (end);
