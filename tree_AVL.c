@@ -6,7 +6,7 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/13 23:27:05 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/16 18:51:10 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/16 18:54:49 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -139,14 +139,14 @@ char		*ft_tree_chr(t_tree_AVL *root, char *index)
 
 	if (!index || !root)
 		return (NULL);
-	hach = ft_strhach_bis(index)
+	hach = ft_strhach_bis(index);
 	while (1)
 	{
 		i = root->hach - hach;
 		if (i == 0)
 			i = ft_strcmp(root->index, index);
 		if (i == 0)
-			return (root->result)
+			return (root->result);
 		if (i < 0 && root->left != NULL)
 			root = root->left;
 		else if (i > 0 && root->right != NULL)
@@ -177,7 +177,7 @@ void		ft_tree_add(t_tree_AVL **root, t_tree_AVL *sheet)
 		if (!ft_tree_add2(i, &tmp, sheet))
 			break ;
 	}
-	ft_tree_balance(*tmp);
+	ft_tree_balance(tmp);
 }
 
 int			ft_tree_add2(int i, t_tree_AVL **tmp, t_tree_AVL *sheet)

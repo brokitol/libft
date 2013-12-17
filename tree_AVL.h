@@ -6,7 +6,7 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/13 23:26:54 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/14 20:02:29 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/16 18:54:22 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,8 @@ t_tree_AVL	*ft_tree_balance		(t_tree_AVL *root);
 t_tree_AVL	*ft_tree_left_rotation	(t_tree_AVL *root);
 t_tree_AVL	*ft_tree_right_rotation	(t_tree_AVL *root);
 void		ft_tree_add				(t_tree_AVL **root, t_tree_AVL *sheet);
+int			ft_tree_add2		(int i, t_tree_AVL **tmp, t_tree_AVL *sheet);
 char		*ft_tree_chr			(t_tree_AVL *root, char *index);
-void		ft_tree_del				(t_tree_AVL **sheet);
 int			ft_tree_cmp				(t_tree_AVL *root, t_tree_AVL *sheet);
 int			ft_tree_strcmp			(t_tree_AVL *root, char *str);
 
