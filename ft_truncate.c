@@ -6,13 +6,29 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/17 13:38:16 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/17 14:44:05 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 20:01:57 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_truncate(char **s, int s_len, char *tmp)
+char	*ft_truncate(char **s, char c)
+{
+	char	*begin;
+	char	*end;
+
+	if (!s || !(*s))
+		return (NULL);
+	if (ft_strchr(*s, c) == NULL)
+		return (NULL);
+	end = ft_strdup(ft_strchr(*s, c) + 1);
+	begin = ft_strsub(*s, 0, ft_strlen(*s) - ft_strlen(ft_strchr(*s, c)));
+	free(*s);
+	*s = begin;
+	return (end);
+}
+
+char	*ft_fasttruncate(char **s, int s_len, char *tmp)
 {
 	char	*begin;
 	char	*end;

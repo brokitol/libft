@@ -6,7 +6,7 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 14:42:26 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/22 19:55:02 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 20:02:42 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,7 +109,8 @@ void		ft_strfastjoin	(char **s1, const char *s2, int s1_len, int s2_len);
 char		*ft_strfastnew	(const size_t size);
 char		*ft_strfastsub	(char *s, size_t start, size_t len, size_t s_len);
 
-char		*ft_truncate	(char **s, int s_len, char *tmp);
+char		*ft_truncate	(char **s, char c);
+char		*ft_fasttruncate(char **s, int s_len, char *tmp);
 int			ft_strhach_bis	(char *str);
 int			ft_strhach		(char *str);
 
