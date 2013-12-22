@@ -6,7 +6,7 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/13 23:27:05 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/17 14:46:13 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 16:05:53 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 
 t_tree_AVL	*ft_tree_new(char *index, char *result)
 {
-	t_tree_AVL *res;
+	t_tree_AVL	*res;
 
 	if ((res = malloc(sizeof(t_tree_AVL))) == NULL)
 		return (NULL);
@@ -49,26 +49,18 @@ void		ft_tree_refresh(t_tree_AVL *root)
 t_tree_AVL	*ft_tree_balance(t_tree_AVL *root)
 {
 	int	i;
+	t_tree_AVL *r;
 
 	if (!root)
 		return (NULL);
 	i = root->len_left - root->len_right;
 	if (root->root != NULL)
 	{
+		r = root->root->right;
 		if (root->root->left == root)
-		{
-			if (i < -1)
-				root->root->left = ft_tree_left_rotation(root);
-			else if (i > 1)
-				root->root->left = ft_tree_right_rotation(root);
-		}
-		else
-		{
-			if (i < -1)
-				root->root->right = ft_tree_left_rotation(root);
-			else if (i > 1)
-				root->root->right = ft_tree_right_rotation(root);
-		}
+			r = root->root->left;
+		r = ((i < -1) ? ft_tree_left_rotation(root) : r);
+		r = ((i > 1) ? ft_tree_right_rotation(root) : r);
 		return (ft_tree_balance(root->root));
 	}
 	else if (i < -1)
@@ -130,94 +122,4 @@ t_tree_AVL	*ft_tree_right_rotation(t_tree_AVL *root)
 	ft_tree_refresh(tmp);
 	ft_tree_refresh(root);
 	return (tmp);
-}
-
-char		*ft_tree_chr(t_tree_AVL *root, char *index)
-{
-	int	hach;
-	int	i;
-
-	if (!index || !root)
-		return (NULL);
-	hach = ft_strhach_bis(index);
-	while (1)
-	{
-		i = root->hach - hach;
-		if (i == 0)
-			i = ft_strcmp(root->index, index);
-		if (i == 0)
-			return (root->result);
-		if (i < 0 && root->left != NULL)
-			root = root->left;
-		else if (i > 0 && root->right != NULL)
-			root = root->right;
-		else
-			return (NULL);
-	}
-	return (NULL);
-}
-
-void		ft_tree_add(t_tree_AVL **root, t_tree_AVL *sheet)
-{
-	t_tree_AVL	*tmp;
-	int			i;
-
-	if (!root || !sheet)
-		return ;
-	if (*root == NULL)
-	{
-		*root = sheet;
-		return ;
-	}
-	tmp = *root;
-	i = 1;
-	while (i)
-	{
-		i = ft_tree_cmp(tmp, sheet);
-		if (!ft_tree_add2(i, &tmp, sheet))
-			break ;
-	}
-	ft_tree_balance(tmp);
-}
-
-int			ft_tree_add2(int i, t_tree_AVL **tmp, t_tree_AVL *sheet)
-{
-	t_tree_AVL	**a;
-
-	a = NULL;
-	if (i < 0)
-		a = &((*tmp)->left);
-	else if (i > 0)
-		a = &((*tmp)->right);
-	if (a && *a != NULL)
-		*tmp = *a;
-	else if (a != NULL)
-	{
-		*a = sheet;
-		return (0);
-	}
-	return (1);
-}
-
-int			ft_tree_cmp(t_tree_AVL *root, t_tree_AVL *sheet)
-{
-	int	i;
-
-	if (!root || !sheet)
-		return (0);
-	i = root->hach - sheet->hach;
-	if (i != 0)
-		return (i);
-	return (ft_strcmp(root->index, sheet->index));
-}
-int			ft_tree_strcmp(t_tree_AVL *root, char *str)
-{
-	int	i;
-
-	if (!root)
-		return (0);
-	i = root->hach - ft_strhach_bis(str);
-	if (i != 0)
-		return (i);
-	return (ft_strcmp(root->index, str));
 }

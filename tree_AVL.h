@@ -6,15 +6,14 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/13 23:26:54 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/16 18:54:22 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 16:03:56 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ARBRE_AVL
 # define ARBRE_AVL
 
-# define MX(a, b) ((a > b) ? a : b)
-#define MAX(x,y) ((x)>(y)?(x):(y))
+# define MX(x,y) ((x)>(y)?(x):(y))
 
 typedef struct	s_tree_AVL
 {

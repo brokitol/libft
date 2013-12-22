@@ -6,7 +6,7 @@
 #    By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/11/20 11:59:50 by bgauci            #+#    #+#              #
-#    Updated: 2013/12/17 14:50:45 by bgauci           ###   ########.fr        #
+#    Updated: 2013/12/22 19:16:59 by bgauci           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,11 +26,11 @@ OBJ =	ft_atoi.o		ft_isalpha.o	ft_isprint.o		ft_memccpy.o	\
 		ft_strncpy.o	ft_strnstr.o	ft_strstr.o			ft_tolower.o	\
 		ft_strfastcat.o	ft_strfastdup.o	ft_strfastjoin.o	ft_strfastnew.o	\
 		ft_lstnew.o		ft_lstdelone.o	ft_lstdel.o			ft_lstadd.o		\
-		ft_lstaddend.o	ft_lstiter.o	ft_lstmap.o			ft_strreverse.o \
+		ft_lstaddend.o	ft_lstiter.o	ft_lstmap.o			ft_strreverse.o	\
 		ft_strlstnew.o	ft_strlstadd.o	ft_strlstaddend.o	ft_strlstdel.o	\
 		ft_strlstiter.o	ft_strlstmap.o	ft_strlstdelone.o	ft_pgcd.o		\
 		ft_strjcat.o	ft_lstswap.o	ft_strfastsub.o		ft_strhach.o	\
-		tree_AVL.o		ft_truncate.o
+		tree_AVL.o		tree_AVL2.o		ft_truncate.o
 FLAGS = -Wall -Werror -Wextra
 CC = /usr/bin/gcc
 RMF = rm -f
