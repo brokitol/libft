@@ -6,13 +6,13 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/28 12:24:39 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/10 11:26:26 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:49:04 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_strlstdel (t_strlist **alst)
+void	ft_strlstdel(t_strlist **alst)
 {
 	if (*alst == NULL)
 		return ;

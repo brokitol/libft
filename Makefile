@@ -6,7 +6,7 @@
 #    By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/11/20 11:59:50 by bgauci            #+#    #+#              #
-#    Updated: 2013/12/22 19:16:59 by bgauci           ###   ########.fr        #
+#    Updated: 2013/12/22 19:55:49 by bgauci           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,5 +47,5 @@ clean:
 fclean: clean
 	$(RMF) $(NAME)
 re: fclean all
-reproper: re clean
-	$(RMF) $(OBJ)
+
+.PHONY: all re clean fclean

@@ -6,7 +6,7 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/22 15:53:24 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/22 15:54:39 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:54:11 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,6 +93,7 @@ int			ft_tree_cmp(t_tree_AVL *root, t_tree_AVL *sheet)
 		return (i);
 	return (ft_strcmp(root->index, sheet->index));
 }
+
 int			ft_tree_strcmp(t_tree_AVL *root, char *str)
 {
 	int	i;

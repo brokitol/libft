@@ -6,13 +6,13 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/24 13:01:47 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/10 11:28:13 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:26:14 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	char			*res;
 	char			tmp;

@@ -6,7 +6,7 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/13 23:27:05 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/22 16:05:53 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:54:00 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,8 +48,8 @@ void		ft_tree_refresh(t_tree_AVL *root)
 
 t_tree_AVL	*ft_tree_balance(t_tree_AVL *root)
 {
-	int	i;
-	t_tree_AVL *r;
+	int			i;
+	t_tree_AVL	*r;
 
 	if (!root)
 		return (NULL);

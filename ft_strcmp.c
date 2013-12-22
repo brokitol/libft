@@ -6,13 +6,13 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 18:24:30 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/15 17:48:07 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:41:19 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-inline int	ft_strcmp (const char *s1, const char *s2)
+inline int	ft_strcmp(const char *s1, const char *s2)
 {
 	unsigned int	i;
 

@@ -6,15 +6,15 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/23 17:38:25 by bgauci            #+#    #+#             */
-/*   Updated: 2013/11/25 15:47:27 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:48:00 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin (char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char *res;
+	char	*res;
 
 	if (!s1 || !s2)
 		return (NULL);

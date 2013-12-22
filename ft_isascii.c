@@ -6,11 +6,11 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 16:48:19 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/10 11:27:49 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:22:30 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii (int c)
+int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
 		return (1);

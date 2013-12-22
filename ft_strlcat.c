@@ -6,17 +6,17 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/22 10:31:40 by bgauci            #+#    #+#             */
-/*   Updated: 2013/11/25 14:39:33 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:57:20 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat (char *dst, const char *src, size_t size)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	unsigned int i;
-	unsigned int j;
-	unsigned int max;
+	unsigned int	i;
+	unsigned int	j;
+	unsigned int	max;
 
 	i = ft_strlen(dst);
 	max = i + ft_strlen(src);

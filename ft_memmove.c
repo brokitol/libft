@@ -6,13 +6,13 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/22 09:59:59 by bgauci            #+#    #+#             */
-/*   Updated: 2013/11/26 19:55:43 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:38:43 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove (void *s1, const void *s2, size_t n)
+void	*ft_memmove(void *s1, const void *s2, size_t n)
 {
 	unsigned int	i;
 	char			*tmp;

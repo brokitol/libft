@@ -6,13 +6,13 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/30 04:39:28 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/12 16:12:21 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:39:02 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int pgcd(int a, int b)
+int	pgcd(int a, int b)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < a && i < b)

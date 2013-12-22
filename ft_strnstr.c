@@ -6,7 +6,7 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 16:44:03 by bgauci            #+#    #+#             */
-/*   Updated: 2013/11/25 14:41:24 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:50:54 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,5 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 			return ((char *)s1 + i);
 		i++;
 	}
-
 	return (NULL);
 }

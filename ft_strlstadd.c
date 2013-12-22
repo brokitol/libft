@@ -6,13 +6,13 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/28 12:23:48 by bgauci            #+#    #+#             */
-/*   Updated: 2013/11/29 14:40:59 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:48:42 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_strlstadd (t_strlist **alst, t_strlist *new)
+void	ft_strlstadd(t_strlist **alst, t_strlist *new)
 {
 	if (!alst || !new)
 		return ;

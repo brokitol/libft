@@ -6,12 +6,12 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/23 17:52:12 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/17 14:47:19 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:52:08 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/*TODO : si s[0] = \0 on doit retourner "\0"*/
 char	**ft_strsplit(char const *s, char c)
 {
 	char	**res;
@@ -25,7 +25,7 @@ char	**ft_strsplit(char const *s, char c)
 	n = 0;
 	i = 0;
 	res = malloc(sizeof(char*) * ft_strlen(s));
-	while (s[i] != '\0' || n == 0)/*TODO : si s[0] = \0 on doit retourner "\0"*/
+	while (s[i] != '\0' || n == 0)
 	{
 		while (s[i] == c)
 			i++;

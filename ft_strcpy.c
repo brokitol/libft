@@ -6,13 +6,13 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 16:58:45 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/14 23:27:25 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:41:36 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-inline char	*ft_strcpy (char *s1, const char *s2)
+inline char	*ft_strcpy(char *s1, const char *s2)
 {
 	int	i;
 

@@ -6,16 +6,16 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/26 13:39:06 by bgauci            #+#    #+#             */
-/*   Updated: 2013/11/27 12:45:06 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:27:46 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list *ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
+t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
-	t_list *res;
-	t_list *tmp;
+	t_list	*res;
+	t_list	*tmp;
 
 	if (!lst || !f)
 		return (NULL);

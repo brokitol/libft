@@ -6,13 +6,13 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 16:28:32 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/10 11:25:48 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:50:29 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strncpy (char *s1, const char *s2, size_t n)
+char	*ft_strncpy(char *s1, const char *s2, size_t n)
 {
 	unsigned int	i;
 	int				bol;

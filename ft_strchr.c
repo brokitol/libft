@@ -6,7 +6,7 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 17:16:38 by bgauci            #+#    #+#             */
-/*   Updated: 2013/11/25 14:36:44 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:41:06 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,7 @@ char	*ft_strchr(const char *s, int c)
 	i = 0;
 	while (s[i] !='\0' && s[i] != c)
 		i++;
-
 	if (s[i] == c)
 		return (char *) s + i;
-
 	return (NULL);
 }

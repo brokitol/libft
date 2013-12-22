@@ -6,13 +6,13 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/21 20:09:10 by bgauci            #+#    #+#             */
-/*   Updated: 2013/11/25 14:33:33 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:38:04 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memccpy (void *s1, const void *s2, int c, size_t n)
+void	*ft_memccpy(void *s1, const void *s2, int c, size_t n)
 {
 	unsigned int	i;
 

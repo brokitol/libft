@@ -6,15 +6,15 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 14:42:26 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/17 13:51:31 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:55:02 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdlib.h>
 
-#ifndef __LIBFT_H__
-#define __LIBFT_H__
+#ifndef LIBFT_H
+# define LIBFT_H
 
 typedef struct	s_list
 {

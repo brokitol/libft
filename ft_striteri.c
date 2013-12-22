@@ -6,7 +6,7 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/22 16:24:28 by bgauci            #+#    #+#             */
-/*   Updated: 2013/11/25 15:43:51 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:47:44 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	int i;
+	int	i;
 
 	if (s == NULL || f == NULL)
 		return ;

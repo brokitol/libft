@@ -6,13 +6,13 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 15:41:05 by bgauci            #+#    #+#             */
-/*   Updated: 2013/11/25 14:46:58 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:39:44 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr (int n)
+void	ft_putnbr(int n)
 {
 	ft_putnbr_fd(n, 1);
 }

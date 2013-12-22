@@ -6,13 +6,13 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/21 20:18:49 by bgauci            #+#    #+#             */
-/*   Updated: 2013/11/25 17:28:17 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:38:12 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr (const void *s, int c, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned int	i;
 

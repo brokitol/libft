@@ -6,13 +6,13 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 16:34:08 by bgauci            #+#    #+#             */
-/*   Updated: 2013/11/25 14:40:23 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:50:00 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strncat (char *s1, const char *s2, size_t n)
+char	*ft_strncat(char *s1, const char *s2, size_t n)
 {
 	unsigned int	i;
 	int				t;

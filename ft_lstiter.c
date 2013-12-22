@@ -6,13 +6,13 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/26 12:57:54 by bgauci            #+#    #+#             */
-/*   Updated: 2013/11/26 13:38:52 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:26:50 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstiter(t_list *lst, void (*f)(t_list *elem))
+void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
 	if (!lst || !f)
 		return ;

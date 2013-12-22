@@ -6,7 +6,7 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 17:07:41 by bgauci            #+#    #+#             */
-/*   Updated: 2013/11/25 14:41:39 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:51:05 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,7 @@ char	*ft_strrchr(const char *s, int c)
 			res = (char *)s + i;
 		i++;
 	}
-
 	if (s[i] == c)
 		res = (char *)s + i;
-
 	return (res);
 }

@@ -6,7 +6,7 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/22 10:19:22 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/05 17:02:48 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:41:49 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strdup(const char *s1)
 {
-	char *res;
+	char	*res;
 
 	if (!s1)
 		return (NULL);

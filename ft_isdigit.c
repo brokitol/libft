@@ -6,11 +6,11 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 19:37:30 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/10 11:27:56 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:22:40 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isdigit (int c)
+int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);

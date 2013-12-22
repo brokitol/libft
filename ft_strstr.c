@@ -6,18 +6,18 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 16:40:39 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/17 14:47:58 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:52:35 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 
-char	*ft_strstr	(const char *s1, const char *s2)
+char	*ft_strstr(const char *s1, const char *s2)
 {
-	int i;
-	int j;
-	int bol;
+	int	i;
+	int	j;
+	int	bol;
 
 	i = 0;
 	if (s2[0] == '\0')
@@ -36,6 +36,5 @@ char	*ft_strstr	(const char *s1, const char *s2)
 			return ((char *)s1 + i);
 		i++;
 	}
-
 	return (NULL);
 }

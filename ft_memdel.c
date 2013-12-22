@@ -6,13 +6,13 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/22 15:58:45 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/10 11:26:50 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:38:37 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_memdel(void **ap)
+void	ft_memdel(void **ap)
 {
 	if (ap == NULL)
 		return ;

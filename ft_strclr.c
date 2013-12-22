@@ -6,7 +6,7 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/22 16:11:04 by bgauci            #+#    #+#             */
-/*   Updated: 2013/11/25 15:42:40 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:57:02 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 void	ft_strclr(char *s)
 {
-	int i;
+	int	i;
 
 	if (s == NULL)
 		return ;
 	i = ft_strlen(s);
-	while(i)
+	while (i)
 	{
 		s[i] = '\0';
 		i--;

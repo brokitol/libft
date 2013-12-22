@@ -6,11 +6,11 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 19:22:46 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/02 13:26:44 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:21:39 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha (int c)
+int	ft_isalpha(int c)
 {
 	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
 		return (1);

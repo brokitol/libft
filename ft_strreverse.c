@@ -6,7 +6,7 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/27 18:55:26 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/17 14:45:07 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/22 19:51:19 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	ft_strreverse(char *s)
 {
-	int i;
-	int j;
-	char tmp;
+	int		i;
+	int		j;
+	char	tmp;
 
 	if (!s)
 		return ;
