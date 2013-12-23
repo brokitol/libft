@@ -6,7 +6,7 @@
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/22 15:53:24 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/22 19:54:11 by bgauci           ###   ########.fr       */
+/*   Updated: 2013/12/23 15:03:55 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,14 @@ int			ft_tree_add2(int i, t_tree_AVL **tmp, t_tree_AVL *sheet)
 	t_tree_AVL	**a;
 
 	a = NULL;
-	if (i < 0)
+	if (i == 0)
+	{
+		(*tmp)->hach = sheet->hach;
+		(*tmp)->index = sheet->index;
+		(*tmp)->result = sheet->result;
+		return (0);
+	}
+	else if (i < 0)
 		a = &((*tmp)->left);
 	else if (i > 0)
 		a = &((*tmp)->right);
