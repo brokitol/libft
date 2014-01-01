@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libtf.h                                            :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bgauci <bgauci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2013/11/19 14:42:26 by bgauci            #+#    #+#             */
-/*   Updated: 2013/12/22 20:02:42 by bgauci           ###   ########.fr       */
+/*   Created: 2013/12/29 13:44:46 by bgauci            #+#    #+#             */
+/*   Updated: 2013/12/29 13:44:47 by bgauci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,12 @@ typedef struct	s_strlist
 	char				*content;
 	struct s_strlist	*next;
 }				t_strlist;
+
+typedef struct	s_intlist
+{
+	int					value;
+	struct s_intlist	*next;
+}				t_intlist;
 
 void		*ft_memalloc	(size_t size);
 void		ft_memdel		(void **ap);
@@ -83,11 +89,14 @@ int			ft_isalnum		(int c);
 int			ft_isascii		(int c);
 int			ft_isprint		(int c);
 void		ft_strjcat		(char **s1, const char *s2);
+char		*ft_truncate	(char **s, char c);
+void		ft_strreverse	(char *s);
 
 t_list		*ft_lstnew		(void const *content, size_t content_size);
 void		ft_lstdelone	(t_list **alst, void (*del)(void*, size_t));
 void		ft_lstdel		(t_list **alst, void (*del)(void *, size_t));
 void		ft_lstadd		(t_list **alst, t_list *new);
+void		ft_lstaddend	(t_list **alst, t_list *new);
 void		ft_lstiter		(t_list *lst, void (*f)(t_list *elem));
 t_list		*ft_lstmap		(t_list *lst, t_list *(*f)(t_list *elem));
 void		ft_lstswap		(t_list *a, t_list *b);
@@ -100,17 +109,22 @@ void		ft_strlstaddend	(t_strlist **alst, t_strlist *new);
 void		ft_strlstiter	(t_strlist *lst, void (*f)(t_strlist *elem));
 t_strlist	*ft_strlstmap	(t_strlist *lst, t_strlist *(*f)(t_strlist *elem));
 
-void		ft_lstaddend	(t_list **alst, t_list *new);
-void		ft_strreverse	(char *s);
+t_intlist	*ft_intlstnew	(int value);
+void		ft_intlstdelone	(t_intlist **alst);
+void		ft_intlstdel	(t_intlist **alst);
+void		ft_intlstadd	(t_intlist **alst, t_intlist *new);
+void		ft_intlstaddend	(t_intlist **alst, t_intlist *new);
+void		ft_intlstiter	(t_intlist *lst, void (*f)(t_intlist *elem));
+t_intlist	*ft_intlstmap	(t_intlist *lst, t_intlist *(*f)(t_intlist *elem));
+
 int			pgcd			(int a, int b);
 char		*ft_strfastcat	(char *s1, const int s1_len, const char *s2);
 char		*ft_strfastdup	(const char *s1, const int s1_len);
 void		ft_strfastjoin	(char **s1, const char *s2, int s1_len, int s2_len);
 char		*ft_strfastnew	(const size_t size);
 char		*ft_strfastsub	(char *s, size_t start, size_t len, size_t s_len);
-
-char		*ft_truncate	(char **s, char c);
 char		*ft_fasttruncate(char **s, int s_len, char *tmp);
+
 int			ft_strhach_bis	(char *str);
 int			ft_strhach		(char *str);
 
